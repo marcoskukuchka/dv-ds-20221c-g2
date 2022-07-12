@@ -6,6 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import ar.edu.davinci.dvds20221cg2.domain.Prenda;
+import ar.edu.davinci.dvds20221cg2.domain.TipoPrenda;
 import ar.edu.davinci.dvds20221cg2.exception.BusinessException;
 
 public interface PrendaService {
@@ -27,6 +28,9 @@ public interface PrendaService {
 	
 	// Método de contar la cantidad de registros
 	long count();
+	
+	// Devuelve los tipos de prendas
+	List<TipoPrenda> getTipoPrendas();
 
 	
 }
